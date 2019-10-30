@@ -11979,8 +11979,14 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
 
+body {
+  font-family: sans-serif; }
+
 #hname {
-  text-align: center; }
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+  margin: 25px; }
 
 #pglist #itemcur:hover {
   cursor: default; }
