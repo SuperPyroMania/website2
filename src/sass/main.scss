@@ -31,7 +31,7 @@ body{
     text-align: center;
     font-size: 48px;
     font-weight: bold;
-    margin: 25px;
+    margin: 15px;
 }
 
 #pglist #itemcur:hover{
@@ -52,6 +52,7 @@ body{
     border-color: black;
     background-color: #f1f1f1;
     text-decoration: none;
+    color: black;
 }
 
 .pglist-itemcur{
@@ -61,4 +62,12 @@ body{
     @extend .pglist-item;
     border-color: black;
     background-color: #f1f1f1;
+}
+
+.themebutton{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: -14px;
+    margin-top: 1px;
 }

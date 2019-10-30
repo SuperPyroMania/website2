@@ -1,0 +1,15 @@
+//Color Template
+
+//Constant Colors
+$border-color: black;
+
+$primary-color-light: #ebebeb;
+$accent-color-light: #2934cc;
+$text-color-light: #202020;
+
+//Dark Theme
+[data-theme="dark"]{
+    $primary-color: #272727;
+    $accent-color: #141963;
+    $text-color: #ffffff;
+}
