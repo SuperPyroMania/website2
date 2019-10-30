@@ -4,7 +4,9 @@
   "description": "personal website",
   "main": "js/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start:dev": "webpack-dev-server"
   },
   "keywords": [
     "website",
@@ -19,6 +21,7 @@
     "popper.js": "^1.16.0"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2",
     "autoprefixer": "^9.7.0",
     "css-loader": "^3.2.0",
     "fibers": "^4.0.2",

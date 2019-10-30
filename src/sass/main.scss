@@ -1,5 +1,5 @@
 /*!
-*HQ Admin Theme
+*Website wooo
 *Author: Will Davis
 *haHAA
 */
@@ -22,3 +22,36 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
 @import 'app/components/app-sidebar';
 @import 'app/components/app-sidebar-mini';
 @import 'app/components/app-title';
+
+#hname{
+    text-align: center;
+}
+
+#pglist #itemcur:hover{
+    cursor: default;
+}
+
+.pglist-item{
+    @extend .px-3;
+    @extend .col-auto;
+    @extend .mx-2;
+    border: solid;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: gray;
+}
+
+.pglist-item:hover{
+    border-color: black;
+    background-color: #f1f1f1;
+    text-decoration: none;
+}
+
+.pglist-itemcur{
+    @extend .px-3;
+    @extend .col-auto;
+    @extend .mx-2;
+    @extend .pglist-item;
+    border-color: black;
+    background-color: #f1f1f1;
+}
