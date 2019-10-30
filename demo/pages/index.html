@@ -8,32 +8,117 @@
     <link rel="stylesheet" href="/css/app.css">
 </head>
 <body>
-    <button id="themebutton1" class="btn btn-primary themebutton">Change Theme</button>
-    <div class="row justify-content-center">
-        <header id="hname" class="col-6">William Davis</header>
-    </div>
+    <header id="hname" class="">William Davis</header>
     <div class="container">
         <div id="pglist" class="">
             <div class="d-flex row-sm justify-content-center">
                 <div id="itemcur" class="pglist-itemcur">
                     HOME
                 </div>
-                <a href="contact.html">
-                    <div id="item" class="pglist-item">
-                        CONTACT
-                    </div>
+                <a id="item" href="contact.html" class="pglist-item">
+                    CONTACT
                 </a>
-                <div id="item" class="pglist-item">
+                <!--<div id="item" class="pglist-item">
                     Link 3
                 </div>
                 <div id="item" class="pglist-item">
                     Link 4
-                </div>
+                </div>-->
             </div>
         </div>
     </div>
 
+    <div class="justify-content-center">
+        <p class="pcenterborder">
+            I am an undergraduate currently studying computer science. 
+            I am not yet sure which branch I would like to pursue, as 
+            I enjoy learning about both the hardware and software aspects 
+            of computers. My classes mostly encompass software engineering 
+            while computer networking is just an interest of mine. Between 
+            school and free time I have attained fluency in many languages, 
+            both front and back-end.
+        </p>
+    </div>
 
+    <div class="justify-content-center">
+            <p class="pcenter" style="font-size: 32px; text-decoration: underline;">
+                Projects
+            </p>
+    </div>
+
+    <div class="container-fluid" style="padding: 0 10%">
+
+        <div class="row">
+
+            <div class="col-6">
+                <div class="card cardborder" style="height: 400px;">
+                    <!--<img src="https://i.imgur.com/z4LAgeU.png" class="card-img-top">-->
+                    <iframe id="websiteembed"
+                        title="Website Embed"
+                        width="auto"
+                        height="100%"
+                        src="index.html">
+                    </iframe>
+                    <div class="card-body">
+                        <h2>Personal Website</h2>
+                        <p class="card-text">
+                            A website to easily showcase my projects (once I 
+                            actually make something). Made using HTML, CSS, SCSS, 
+                            and Bootstrap.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        Have you ever seen a website in a website??
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card cardborder">
+                    <div class="card-header">
+                        <h2>Project 2</h2>
+                    </div>
+                    <div class="card-body">
+                        Card Body
+                    </div>
+                    <div class="card-footer">
+                        Card Footer
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row mt-4">
+
+            <div class="col-6">
+                <div class="card cardborder">
+                    <div class="card-header">
+                        <h2>Project 3</h2>
+                    </div>
+                    <div class="card-body">
+                        Card Body
+                    </div>
+                    <div class="card-footer">
+                        Card Footer
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card cardborder">
+                    <div class="card-header">
+                        <h2>Project 4</h2>
+                    </div>
+                    <div class="card-body">
+                        Card Body
+                    </div>
+                    <div class="card-footer">
+                        Card Footer
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
 
     <script src="/js/app.js"></script>
 </body>

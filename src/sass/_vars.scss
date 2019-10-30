@@ -1,15 +1,17 @@
 //Color Template
 
-//Constant Colors
-$border-color: black;
+//Constant Nav Bar Colors
+$border-color-current: black;
+$border-color-hover: black;
+$border-color: gray;
+$background-btn-color: #f1f1f1;
 
 $primary-color-light: #ebebeb;
 $accent-color-light: #2934cc;
 $text-color-light: #202020;
+$text-background-color-light: white;
 
 //Dark Theme
-[data-theme="dark"]{
-    $primary-color: #272727;
-    $accent-color: #141963;
-    $text-color: #ffffff;
-}
+$primary-color-dark: #272727;
+$accent-color-dark: #141963;
+$text-color-dark: #ffffff;

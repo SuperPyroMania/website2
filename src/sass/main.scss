@@ -23,8 +23,13 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
 @import 'app/components/app-sidebar-mini';
 @import 'app/components/app-title';
 
+html{
+    height: 100%;
+}
+
 body{
     font-family: sans-serif;
+    background: $primary-color-light;
 }
 
 #hname{
@@ -32,6 +37,15 @@ body{
     font-size: 48px;
     font-weight: bold;
     margin: 15px;
+}
+
+.discretelinks{
+    color: $text-color-light;
+}
+
+.discretelinks:hover{
+    text-decoration: none;
+    color: $text-color-light;
 }
 
 #pglist #itemcur:hover{
@@ -42,17 +56,19 @@ body{
     @extend .px-3;
     @extend .col-auto;
     @extend .mx-2;
+    @extend .discretelinks;
     border: solid;
     border-radius: 10px;
     border-width: 2px;
-    border-color: gray;
+    padding: 4px;
+    border-color: $border-color;
+    background-color: $text-background-color-light;
 }
 
 .pglist-item:hover{
-    border-color: black;
-    background-color: #f1f1f1;
-    text-decoration: none;
-    color: black;
+    @extend .discretelinks:hover;
+    border-color: $border-color-hover;
+    background-color: $background-btn-color;
 }
 
 .pglist-itemcur{
@@ -60,14 +76,33 @@ body{
     @extend .col-auto;
     @extend .mx-2;
     @extend .pglist-item;
-    border-color: black;
-    background-color: #f1f1f1;
+    border-color: $border-color-current;
+    background-color: $background-btn-color;
 }
 
-.themebutton{
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    right: -14px;
-    margin-top: 1px;
+.pcenter{
+    max-width: 60%;
+    margin:auto;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    width: max-content;
+}
+
+.pcenterborder{
+    @extend .discretelinks;
+    @extend .discretelinks:hover;
+    @extend .pcenter;
+    border: solid;
+    border-radius: 10px;
+    border-width: 2px;
+    padding: 2px 20px;
+    border-color: $border-color;
+    background-color: $text-background-color-light;
+}
+
+.cardborder{
+    border: solid;
+    border-width: 1px;
+    max-width: auto;
+    border-color: $accent-color-light;
 }

@@ -1190,22 +1190,22 @@ pre {
   .table td {
     padding: 0.75rem;
     vertical-align: top;
-    border-top: 1px solid black; }
+    border-top: 1px solid gray; }
   .table thead th {
     vertical-align: bottom;
-    border-bottom: 2px solid black; }
+    border-bottom: 2px solid gray; }
   .table tbody + tbody {
-    border-top: 2px solid black; }
+    border-top: 2px solid gray; }
 
 .table-sm th,
 .table-sm td {
   padding: 0.3rem; }
 
 .table-bordered {
-  border: 1px solid black; }
+  border: 1px solid gray; }
   .table-bordered th,
   .table-bordered td {
-    border: 1px solid black; }
+    border: 1px solid gray; }
   .table-bordered thead th,
   .table-bordered thead td {
     border-bottom-width: 2px; }
@@ -1378,7 +1378,7 @@ pre {
 .table .thead-light th {
   color: #495057;
   background-color: #e9ecef;
-  border-color: black; }
+  border-color: gray; }
 
 .table-dark {
   color: #fff;
@@ -4438,7 +4438,7 @@ a.close.disabled {
   -webkit-box-pack: justify;
           justify-content: space-between;
   padding: 1rem 1rem;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid gray;
   border-top-left-radius: 0.3rem;
   border-top-right-radius: 0.3rem; }
   .modal-header .close {
@@ -4463,7 +4463,7 @@ a.close.disabled {
   -webkit-box-pack: end;
           justify-content: flex-end;
   padding: 1rem;
-  border-top: 1px solid black;
+  border-top: 1px solid gray;
   border-bottom-right-radius: 0.3rem;
   border-bottom-left-radius: 0.3rem; }
   .modal-footer > :not(:first-child) {
@@ -5022,19 +5022,19 @@ button.bg-dark:focus {
   background-color: transparent !important; }
 
 .border {
-  border: 1px solid black !important; }
+  border: 1px solid gray !important; }
 
 .border-top {
-  border-top: 1px solid black !important; }
+  border-top: 1px solid gray !important; }
 
 .border-right {
-  border-right: 1px solid black !important; }
+  border-right: 1px solid gray !important; }
 
 .border-bottom {
-  border-bottom: 1px solid black !important; }
+  border-bottom: 1px solid gray !important; }
 
 .border-left {
-  border-left: 1px solid black !important; }
+  border-left: 1px solid gray !important; }
 
 .border-0 {
   border: 0 !important; }
@@ -7535,10 +7535,10 @@ a.text-dark:hover, a.text-dark:focus {
     .table-dark td,
     .table-dark thead th,
     .table-dark tbody + tbody {
-      border-color: black; }
+      border-color: gray; }
   .table .thead-dark th {
     color: inherit;
-    border-color: black; } }
+    border-color: gray; } }
 
 /*!
  * Font Awesome Free 5.11.2 by @fontawesome - https://fontawesome.com
@@ -11979,14 +11979,25 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
 
+html {
+  height: 100%; }
+
 body {
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  background: #ebebeb; }
 
 #hname {
   text-align: center;
   font-size: 48px;
   font-weight: bold;
   margin: 15px; }
+
+.discretelinks, .pglist-item, .pglist-itemcur, .pcenterborder {
+  color: #202020; }
+
+.discretelinks:hover, .pglist-item:hover, .pglist-itemcur:hover, .pcenterborder {
+  text-decoration: none;
+  color: #202020; }
 
 #pglist #itemcur:hover {
   cursor: default; }
@@ -11995,23 +12006,39 @@ body {
   border: solid;
   border-radius: 10px;
   border-width: 2px;
-  border-color: gray; }
+  padding: 4px;
+  border-color: gray;
+  background-color: white; }
 
 .pglist-item:hover, .pglist-itemcur:hover {
   border-color: black;
-  background-color: #f1f1f1;
-  text-decoration: none;
-  color: black; }
+  background-color: #f1f1f1; }
 
 .pglist-itemcur {
   border-color: black;
   background-color: #f1f1f1; }
 
-.themebutton {
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  right: -14px;
-  margin-top: 1px; }
+.pcenter, .pcenterborder {
+  max-width: 60%;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content; }
+
+.pcenterborder {
+  border: solid;
+  border-radius: 10px;
+  border-width: 2px;
+  padding: 2px 20px;
+  border-color: gray;
+  background-color: white; }
+
+.cardborder {
+  border: solid;
+  border-width: 1px;
+  max-width: auto;
+  border-color: #2934cc; }
 
 
